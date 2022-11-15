@@ -1,6 +1,6 @@
 # RNCryptor-node
 
-> This repo hard forks from [chesstrian/JSCryptor](https://github.com/chesstrian/JSCryptor) and use native `crypto` instead of [mcrypt](https://www.npmjs.com/package/mcrypt).
+> This repo hard forks from [chesstrian/JSCryptor](https://github.com/chesstrian/JSCryptor) and uses native `crypto` instead of [mcrypt](https://www.npmjs.com/package/mcrypt).
 
 *Javascript implementation of [RNCryptor](https://github.com/RNCryptor/RNCryptor-Spec)*
 
