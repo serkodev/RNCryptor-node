@@ -1,31 +1,17 @@
-# JSCryptor
+# RNCryptor-node
 
-[![Build Status](https://travis-ci.org/chesstrian/JSCryptor.svg?branch=master)](https://travis-ci.org/chesstrian/JSCryptor)
+> This repo hard forks from [chesstrian/JSCryptor](https://github.com/chesstrian/JSCryptor) and use native `crypto` instead of [mcrypt](https://www.npmjs.com/package/mcrypt).
 
 *Javascript implementation of [RNCryptor](https://github.com/RNCryptor/RNCryptor-Spec)*
 
 This implementation tries to be compatible with [Rob Napier's Objective-C implementation of RNCryptor](https://github.com/RNCryptor/RNCryptor), It supports schema version 3.
 This code is based on the [PHP implementation of RNCryptor](https://github.com/RNCryptor/RNCryptor-php).
 
-## Important Recent Changes
-Now a `Buffer` is returned, use `.toString()` to convert the result to whatever format you need.
+## Install
 
-## Install on Linux (Debian)
 ```bash
-sudo apt-get install libmcrypt4 libmcrypt-dev
-npm install jscryptor
+npm i rncryptor-node
 ```
-
-## Install on Mac OS X w/ Homebrew
-```bash
-brew install libmcrypt
-npm install jscryptor
-```
-
-## Install on Windows
-### Thanks to @jimmitaker and @black-snow for pointing this
-
-VS2015+ (Community Edition works fine) is required.
 
 ## Test
 ```bash
