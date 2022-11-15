@@ -1,7 +1,7 @@
 {
-  "name": "jscryptor",
-  "version": "0.0.12",
-  "description": "Javascript implementation of RNCryptor",
+  "name": "rncryptor-node",
+  "version": "0.0.1",
+  "description": "Node.js implementation of RNCryptor",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chesstrian/JSCryptor.git"
+    "url": "https://github.com/serkodev/RNCryptor-node"
   },
   "keywords": [
     "rncryptor"
@@ -21,9 +21,15 @@
     "name": "Christian Gutierrez",
     "email": "chesstrian@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "SerKo",
+      "url": "http://github.com/serkodev"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chesstrian/JSCryptor/issues"
+    "url": "https://github.com/serkodev/RNCryptor-node/issues"
   },
-  "homepage": "https://github.com/chesstrian/JSCryptor"
+  "homepage": "https://github.com/serkodev/RNCryptor-node"
 }
