@@ -25,7 +25,7 @@ npm test
 var password = 'myPassword';
 var b64string = "AwHsr+ZD87myaoHm51kZX96u4hhaTuLkEsHwpCRpDywMO1Moz35wdS6OuDgq+SIAK6BOSVKQFSbX/GiFSKhWNy1q94JidKc8hs581JwVJBrEEoxDaMwYE+a+sZeirThbfpup9WZQgp3XuZsGuZPGvy6CvHWt08vsxFAn9tiHW9EFVtdSK7kAGzpnx53OUSt451Jpy6lXl1TKek8m64RT4XPr";
 
-var RNCryptor = require('jscryptor');
+var RNCryptor = require('rncryptor-node');
 
 console.time('Decrypting example');
 var decrypted = RNCryptor.Decrypt(b64string, password);
@@ -36,7 +36,7 @@ console.log("Result:", decrypted.toString());
 ### A very good example, provided by @enricodeleo
 ```js
 var fs = require('fs');
-var RNCryptor = require('jscryptor');
+var RNCryptor = require('rncryptor-node');
 
 var password = 'myPassword';
 
@@ -55,12 +55,13 @@ fs.writeFileSync('./Octocat2.jpg', dec);  // Image should open.
 
 ## API
 ### RNCryptor()
-Object exposed by `require('jscryptor')`;
+Object exposed by `require('rncryptor-node')`;
 
 ### RNCryptor.Encrypt
 * plain_text: *String* or *Buffer*
 * password: *String* or *Buffer*
 * version: *Number* (3 by default, not mandatory)
+* seeded: *Boolean* (false by default, not mandatory)
 
 ### RNCryptor.Decrypt
 * b64_str: *String* or *Buffer*
